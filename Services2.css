@@ -1,0 +1,48 @@
+.services-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content-left {
+  width: 60%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.service-title {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.popup-content {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.service-item:hover .popup-content {
+  display: block;
+}
+
+.image1-right {
+  width: 35%;
+  /* Add your image styles here */
+}

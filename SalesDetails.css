@@ -1,0 +1,163 @@
+/* SalesDetails.css */
+
+.sales-details {
+    padding: 40px;
+    background: linear-gradient(135deg, #fff5f5, #ffeeee); /* Light gradient with subtle color */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.sales-details:hover {
+    transform: translateY(-5px);
+}
+
+.sales-details h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s;
+}
+
+.sales-details h1:hover {
+    color: #007bff;
+}
+
+.sales-details p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.sales-details ul {
+    text-align: left;
+    margin: 0 auto 25px auto;
+    max-width: 650px;
+}
+
+.sales-details li {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.sales-details button {
+    margin-top: 20px;
+    padding: 14px 28px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sales-details button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.ReactModal__Content {
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    padding: 14px 28px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+button[type="button"] {
+    margin-left: 10px;
+    padding: 14px 28px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button[type="button"]:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+}
+
+.apply-now {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.apply-now a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.apply-now a:hover {
+    color: #0056b3;
+}
+

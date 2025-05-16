@@ -1,0 +1,70 @@
+/* InternshipDetails.css */
+
+.internship-details {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #e6f7ff; /* Light blue background */
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center; /* Center align the content */
+}
+
+.internship-details img.internship-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.internship-details h1 {
+    color: #0056b3;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.internship-details h2 {
+    color: #0056b3;
+    margin-top: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.internship-details p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000; /* Change paragraph color to black */
+}
+
+.internship-details ul {
+    list-style-type: circle;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    text-align: left; /* Align list items to the left */
+}
+
+.internship-details li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    color: #000; /* Change list item color to black */
+}
+
+.apply-now {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.apply-now a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.apply-now a:hover {
+    color: #0056b3;
+}

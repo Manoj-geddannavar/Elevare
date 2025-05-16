@@ -1,0 +1,141 @@
+/* Jobser2 Page Specific Styles */
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-left {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideIn 1.5s ease-out forwards;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  from {
+      text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+  }
+  to {
+      text-shadow: 0 0 20px rgba(255, 204, 0, 1);
+  }
+}
+
+p, ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 15px;
+  background: rgba(255, 204, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+li:hover {
+  transform: scale(1.05);
+  background: rgba(255, 204, 0, 0.3);
+  color: #fff;
+}
+
+.description {
+  font-size: 1rem;
+  color: #eee;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: none;
+}
+
+li.active .description {
+  display: block;
+}
+
+.image-right {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .services-container {
+      padding: 30px;
+  }
+  
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  li {
+      font-size: 1rem;
+      padding: 10px;
+  }
+  
+  .image-right {
+      width: 250px;
+      height: 250px;
+  }
+}
+li p {
+  display: none; /* Default: hidden */
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: #ddd;
+}
+
+li.active p {
+  display: block; /* Show when active */
+}

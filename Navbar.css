@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white; /* Change this to your desired navbar color */
+    padding: 10px 20px; /* Adjusted padding to ensure proper spacing */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo inside the circle */
+    background-color: white; /* White background for logo */
+    width: 80px; /* Equal width and height for round shape */
+    height: 80px; /* Equal width and height for round shape */
+    border-radius: 100%; /* Round shape */
+    overflow: hidden; /* Ensure the image doesn't exceed the boundaries */
+}
+
+.navbar-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without stretching */
+    border-radius: 40%; /* Ensure the image itself is round */
+    display: block; /* Ensure the image is treated as a block-level element */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 0px; /* Adjust margin as needed */
+}
+
+.navbar-links li a {
+    color: #181817; /* Adjusted link color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px; /* Adjust padding as needed */
+    background-color: transparent !important; /* Ensure no background */
+    border-radius: 0; /* Remove any rounded background */
+}
+
+
+
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+
+    .navbar-links li {
+        margin: 5px 0; /* Reduced margin to save space */
+    }
+}

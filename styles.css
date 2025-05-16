@@ -1,0 +1,30 @@
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.apply-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.apply-form input {
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.apply-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-form button:hover {
+  background-color: #0056b3;
+}

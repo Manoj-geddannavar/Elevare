@@ -1,0 +1,85 @@
+/* Whyelevare.css */
+.container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #ff8c00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+.container h1 span {
+  font-weight: bold;
+  background: linear-gradient(90deg, #1e90ff, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Ensures 5 columns in a row */
+  gap: 20px; /* Adjust gap for better spacing */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr); /* Adjusts to 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    grid-template-columns: 1fr; /* Stacks into a single column on very small screens */
+  }
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+.feature-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffcc00, #ff6699);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f1f1f1;
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .logo-tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: #6c757d; /* Light grey */
+  }
+  

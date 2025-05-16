@@ -1,0 +1,95 @@
+/* AboutUs.css */
+.about-us-container {
+    background: linear-gradient(to bottom right, #f6d365, #fda085);
+    padding: 40px 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+  }
+  
+  .about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-box {
+    background: #ffffff;
+    border: 2px solid #fda085;
+    border-radius: 15px;
+    padding: 20px 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 280px;
+    margin: 0 15px;
+  }
+  
+  .about-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Auto-expand text when hovered */
+  .about-box:hover .about-text {
+    height: auto;
+    opacity: 1;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+  }
+  
+  .about-title {
+    font-size: 20px;
+    color: #f96d00;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .about-title.active {
+    color: #f6416c;
+    transform: scale(1.1);
+  }
+  
+  .about-text {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    margin-top: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .about-text.visible {
+    height: auto;
+    opacity: 1;
+    margin-top: 10px;
+  }
+  
+  .about-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 18px;
+    }
+  
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

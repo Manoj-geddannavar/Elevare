@@ -1,0 +1,89 @@
+/* Jobser2 Page Specific Styles */
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .content-left {
+    flex: 1;
+    padding: 30px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeSlideIn 1.5s ease-out forwards;
+    color: #fff;
+  }
+  
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: textGlow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes textGlow {
+    from {
+      text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 204, 0, 1);
+    }
+  }
+  
+  p, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 204, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    transform: scale(1.1);
+    background: rgba(255, 204, 0, 0.3);
+    color: #fff;
+  }
+  
+  .image-right {
+    flex: 1;
+    height: 350px;
+    background: url(D:\Elavare1\my-app\src\Components\images\AboutUsimage1.png.png) center/cover no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
